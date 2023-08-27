@@ -1,0 +1,13 @@
+Passive
+1. https://github.com/gwen001/github-subdomains
+
+
+2. assetfinder 
+assetfinder "target" -subs-only | grep |target|
+
+3. knock 
+knockpy --no-http target
+
+4. subfinder 
+subfinder -d target -all -silent 
+

@@ -1,0 +1,23 @@
+Passive
+1. https://github.com/gwen001/github-subdomains
+
+2. assetfinder 
+assetfinder "target" -subs-only | grep |target|
+
+3. knock 
+knockpy --no-http target
+
+4. subfinder 
+subfinder -d target -all -silent  
+
+5. Then to validate
+
+cat filename | grep -P "(\.[\w-]+){3}$"
+this command: will fillter the fourth level. 
+and FUZZ the fourth level with other paramter.
+by using fuff tool :
+https://github.com/tamimhasan404/FFUF-Tips-And-Tricks
+./ffuf -w /root/Desktop/wordlist.txt -u http://FUZZ.ab.com -of html -o result
+
+
+
